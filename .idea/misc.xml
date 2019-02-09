@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="javafx.fxml.FXML" />
+    </list>
+  </component>
+  <component name="ProjectKey">
+    <option name="state" value="project://e79810c8-c5c8-43b1-b19c-90c1f4095425" />
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/src/META-INF/Categores.xml" />
+    <file url="file://$PROJECT_DIR$/src/META-INF/CategoryDesc.xml" />
+    <file url="file://$PROJECT_DIR$/src/META-INF/Employees.xml" />
+    <file url="file://$PROJECT_DIR$/src/META-INF/Factories.xml" />
+    <file url="file://$PROJECT_DIR$/src/META-INF/Laboratories.xml" />
+    <file url="file://$PROJECT_DIR$/src/META-INF/Markets.xml" />
+    <file url="file://$PROJECT_DIR$/src/META-INF/OrderDetails.xml" />
+    <file url="file://$PROJECT_DIR$/src/META-INF/Products.xml" />
+    <file url="file://$PROJECT_DIR$/src/META-INF/ProductSmallfirm.xml" />
+    <file url="file://$PROJECT_DIR$/src/META-INF/PurchaseOrder.xml" />
+    <file url="file://$PROJECT_DIR$/src/META-INF/Sample.xml" />
+    <file url="file://$PROJECT_DIR$/src/META-INF/SmallfirmMachines.xml" />
+    <file url="file://$PROJECT_DIR$/src/META-INF/SmallFirms.xml" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

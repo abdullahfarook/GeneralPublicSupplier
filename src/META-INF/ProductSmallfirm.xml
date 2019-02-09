@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Models.ProductSmallfirm">
+        <table name="PRODUCT_SMALLFIRM" schema="dbo" catalog="ProjectDB"/>
+        <id-class class="Models.ProductSmallfirmPK"/>
+        <attributes>
+            <id name="smallFirmId">
+                <column name="SmallFirm_ID"/>
+            </id>
+            <id name="productId">
+                <column name="Product_ID"/>
+            </id>
+            <basic name="quantity">
+                <column name="Quantity"/>
+            </basic>
+            <basic name="timeRequired">
+                <column name="Time_Required"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

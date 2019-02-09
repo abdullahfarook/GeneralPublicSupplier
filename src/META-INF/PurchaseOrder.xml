@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Models.PurchaseOrder">
+        <table name="PURCHASE_ORDER" schema="dbo" catalog="ProjectDB"/>
+        <attributes>
+            <id name="orderId">
+                <column name="Order_ID"/>
+            </id>
+            <basic name="factoryId">
+                <column name="Factory_ID"/>
+            </basic>
+            <basic name="employeeId">
+                <column name="Employee_ID"/>
+            </basic>
+            <basic name="orderDate">
+                <column name="Order_Date"/>
+            </basic>
+            <basic name="requiredDate">
+                <column name="Required_Date"/>
+            </basic>
+            <basic name="shipmentDate">
+                <column name="Shipment_Date"/>
+            </basic>
+            <basic name="orderSpecs">
+                <column name="Order_Specs"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

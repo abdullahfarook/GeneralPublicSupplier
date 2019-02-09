@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Models.Employees">
+        <table name="EMPLOYEES" schema="dbo" catalog="ProjectDB"/>
+        <attributes>
+            <id name="employeeId">
+                <column name="Employee_ID"/>
+            </id>
+            <basic name="employeeFirstName">
+                <column name="Employee_First_Name"/>
+            </basic>
+            <basic name="employeeLastName">
+                <column name="Employee_Last_Name"/>
+            </basic>
+            <basic name="employeeTitle">
+                <column name="Employee_Title"/>
+            </basic>
+            <basic name="employeeHireDate">
+                <column name="Employee_Hire_Date"/>
+            </basic>
+            <basic name="employeeNo">
+                <column name="Employee_No"/>
+            </basic>
+            <basic name="employeeCity">
+                <column name="Employee_City"/>
+            </basic>
+            <basic name="employeeState">
+                <column name="Employee_State"/>
+            </basic>
+            <basic name="employeeLocation">
+                <column name="Employee_Location"/>
+            </basic>
+            <basic name="employeeSallery">
+                <column name="Employee_Sallery"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

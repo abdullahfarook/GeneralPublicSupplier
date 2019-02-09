@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Models.Laboratories">
+        <table name="LABORATORIES" schema="dbo" catalog="ProjectDB"/>
+        <attributes>
+            <id name="laboratoryId">
+                <column name="Laboratory_ID"/>
+            </id>
+            <basic name="laboratoryName">
+                <column name="Laboratory_Name"/>
+            </basic>
+            <basic name="laboratoryCity">
+                <column name="Laboratory_City"/>
+            </basic>
+            <basic name="laboratoryState">
+                <column name="Laboratory_State"/>
+            </basic>
+            <basic name="laboratoryLocation">
+                <column name="Laboratory_Location"/>
+            </basic>
+            <basic name="sampleReport">
+                <column name="Sample_Report"/>
+                <lob/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

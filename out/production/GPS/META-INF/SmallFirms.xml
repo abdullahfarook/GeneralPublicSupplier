@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Models.SmallFirms">
+        <table name="SMALL_FIRMS" schema="dbo" catalog="ProjectDB"/>
+        <attributes>
+            <id name="smallFirmId">
+                <column name="SmallFirm_ID"/>
+            </id>
+            <basic name="smallFirmName">
+                <column name="SmallFirm_Name"/>
+            </basic>
+            <basic name="smallFirmContactorName">
+                <column name="SmallFirm_Contactor_Name"/>
+            </basic>
+            <basic name="smallFirmNo">
+                <column name="SmallFirm_NO"/>
+            </basic>
+            <basic name="smallFirmCity">
+                <column name="SmallFirm_City"/>
+            </basic>
+            <basic name="smallFirmState">
+                <column name="SmallFirm_State"/>
+            </basic>
+            <basic name="smallFirmLocation">
+                <column name="SmallFirm_Location"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

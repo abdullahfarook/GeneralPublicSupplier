@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="SQL Server (Microsoft) - ProjectDB@localhost" uuid="429331a5-89b5-4ac7-9905-9a065e025953">
+      <secret-storage>master_key</secret-storage>
+      <user-name>javauser</user-name>
+      <schema-pattern>ProjectDB.dbo</schema-pattern>
+      <default-schemas>ProjectDB.*</default-schemas>
+    </data-source>
+  </component>
+</project>

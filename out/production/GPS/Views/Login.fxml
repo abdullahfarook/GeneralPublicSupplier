@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="apMother" prefHeight="620.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+   <children>
+      <HBox alignment="CENTER" focusTraversable="true" prefHeight="535.0" prefWidth="760.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="620.0" prefWidth="726.0">
+               <children>
+                  <AnchorPane prefHeight="384.0" prefWidth="668.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="18.0" text="General Public Supplier" textFill="#455ad6c0">
+                           <font>
+                              <Font name="System Bold" size="31.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="381.0" layoutY="52.0" prefHeight="280.0" prefWidth="290.0" style="-fx-background-color: white;">
+                           <children>
+                              <Hyperlink layoutX="88.0" layoutY="256.0" onAction="#btnRegister" text="Create an account">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Hyperlink>
+                              <Label layoutX="80.0" layoutY="14.0" text="SIGN IN">
+                                 <font>
+                                    <Font name="DejaVu Sans Bold" size="29.0" />
+                                 </font>
+                              </Label>
+                              <GridPane layoutX="5.0" layoutY="83.0" prefHeight="97.0" prefWidth="281.0" vgap="10.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <TextField fx:id="usertextField" promptText="User Name" GridPane.columnSpan="2" />
+                                    <PasswordField fx:id="passField" promptText="Password" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                              <Button layoutX="96.0" layoutY="203.0" mnemonicParsing="false" onAction="#btnLogin" text="Log In" />
+                           </children>
+                           <effect>
+                              <InnerShadow color="#dd0a1f" />
+                           </effect>
+                        </AnchorPane>
+                        <Text fill="WHITE" layoutX="14.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is an Order and Supply management System specially for Textile Supplier." wrappingWidth="319.99999513477087">
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font></Text>
+                        <Text fill="#f5efef" layoutX="14.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can share your comment / Requirement / Bug report with me." wrappingWidth="319.9999902378768">
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="14.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Created By : " wrappingWidth="319.99999513477087">
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="25.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Abdullah Farooq" wrappingWidth="319.99999513477087">
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="25.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Muhammad Ahmad" wrappingWidth="319.99999513477087">
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="25.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Hamza Ilyas" wrappingWidth="319.99999513477087">
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@../style/MainStyle.css" />
+   </stylesheets>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

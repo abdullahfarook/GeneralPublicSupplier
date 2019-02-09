@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Models.Factories">
+        <table name="FACTORIES" schema="dbo" catalog="ProjectDB"/>
+        <attributes>
+            <id name="factoryId">
+                <column name="Factory_ID"/>
+            </id>
+            <basic name="factoryName">
+                <column name="Factory_Name"/>
+            </basic>
+            <basic name="factoryContractorName">
+                <column name="Factory_Contractor_Name"/>
+            </basic>
+            <basic name="factoryNo">
+                <column name="Factory_No"/>
+            </basic>
+            <basic name="factoryCity">
+                <column name="Factory_City"/>
+            </basic>
+            <basic name="factoryLocation">
+                <column name="Factory_Location"/>
+            </basic>
+            <basic name="factoryMajor">
+                <column name="Factory_Major"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

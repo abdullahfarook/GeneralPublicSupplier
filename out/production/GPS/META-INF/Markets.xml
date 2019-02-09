@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Models.Markets">
+        <table name="MARKETS" schema="dbo" catalog="ProjectDB"/>
+        <attributes>
+            <id name="marketId">
+                <column name="Market_ID"/>
+            </id>
+            <basic name="productId">
+                <column name="Product_ID"/>
+            </basic>
+            <basic name="marketName">
+                <column name="Market_Name"/>
+            </basic>
+            <basic name="marketCity">
+                <column name="Market_City"/>
+            </basic>
+            <basic name="marketLocation">
+                <column name="Market_Location"/>
+            </basic>
+            <basic name="goodsAvailable">
+                <column name="Goods_Available"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

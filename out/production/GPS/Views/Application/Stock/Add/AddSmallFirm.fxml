@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Group xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Apllication.Stock.Add.AddSmallFirmController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="apContent" layoutX="10.0" layoutY="11.0"  prefHeight="617.0" prefWidth="554.0">
+         <children>
+            <GridPane layoutX="46.0" layoutY="43.0">
+               <children>
+                  <Label text="Small Firm Name :" GridPane.columnSpan="2">
+                     <font>
+                        <Font name="David" size="19.0" />
+                     </font></Label>
+                  <TextField fx:id="tfName" GridPane.columnSpan="4" GridPane.rowIndex="1" />
+                  <Label text="Small Firm Contact No" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="David" size="19.0" />
+                     </font></Label>
+                  <Label text="Factory Address :" GridPane.columnSpan="2" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="David" size="19.0" />
+                     </font></Label>
+                  <TextArea fx:id="taAddress" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="4" GridPane.rowIndex="9" GridPane.rowSpan="3" />
+                  <Label text="Small Firm Name" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="David" size="19.0" />
+                     </font></Label>
+                  <TextField fx:id="tfNumber" GridPane.columnSpan="4" GridPane.rowIndex="3" />
+                  <TextField fx:id="tfState" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="3.0" top="20.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label text="         City:" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="David" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label text="       State: " GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="5.0" top="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="David" size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfCity" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="3.0" top="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="tfContractor" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TableView prefHeight="169.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="12" GridPane.rowSpan="6">
+                    <columns>
+                      <TableColumn minWidth="0.0" prefWidth="199.0" text="Machines" />
+                    </columns>
+                     <GridPane.margin>
+                        <Insets left="3.0" />
+                     </GridPane.margin>
+                  </TableView>
+                  <Label text="   Machine" GridPane.rowIndex="13">
+                     <font>
+                        <Font name="David" size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfMachine" GridPane.columnSpan="2" GridPane.rowIndex="14" />
+                  <Button mnemonicParsing="false" onAction="#btnAdd" text="Add" GridPane.rowIndex="15">
+                     <GridPane.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Label text="Contractor" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="David" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Label fx:id="lblCaption" alignment="CENTER" layoutX="102.0" layoutY="7.0" prefHeight="36.0" prefWidth="265.0" text="Add Small Firm">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnClose" cancelButton="true" layoutX="515.0" layoutY="-4.0" mnemonicParsing="false" onAction="#btnCloseOnAction" prefHeight="36.0" prefWidth="31.0" stylesheets="@../../../../style/btnOnText.css" />
+            <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="526.0" layoutY="1.0">
+               <image>
+                  <Image url="@../../../../icon/logOutRed.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="217.0" layoutY="586.0" mnemonicParsing="false" onAction="#btnSave" text="Save" />
+         </children>
+         <stylesheets>
+            <URL value="@../../../../style/PopUp.css" />
+            <URL value="@../../../../style/MainStyle.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</Group>

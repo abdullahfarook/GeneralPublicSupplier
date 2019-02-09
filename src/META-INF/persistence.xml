@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="GPS" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <!--<mapping-file>META-INF/Categores.xml</mapping-file>-->
+        <!--<mapping-file>META-INF/CategoryDesc.xml</mapping-file>-->
+        <!--<mapping-file>META-INF/Employees.xml</mapping-file>-->
+        <!--<mapping-file>META-INF/Factories.xml</mapping-file>-->
+        <!--<mapping-file>META-INF/Laboratories.xml</mapping-file>-->
+        <!--<mapping-file>META-INF/Markets.xml</mapping-file>-->
+        <!--<mapping-file>META-INF/OrderDetails.xml</mapping-file>-->
+        <!--<mapping-file>META-INF/ProductSmallfirm.xml</mapping-file>-->
+        <!--<mapping-file>META-INF/Products.xml</mapping-file>-->
+        <!--<mapping-file>META-INF/PurchaseOrder.xml</mapping-file>-->
+        <!--<mapping-file>META-INF/Sample.xml</mapping-file>-->
+        <!--<mapping-file>META-INF/SmallFirms.xml</mapping-file>-->
+        <!--<mapping-file>META-INF/SmallfirmMachines.xml</mapping-file>-->
+        <class>Models.Categores</class>
+        <class>Models.CategoryDesc</class>
+        <class>Models.Employees</class>
+        <class>Models.Factories</class>
+        <class>Models.Laboratories</class>
+        <class>Models.Markets</class>
+        <class>Models.OrderDetails</class>
+        <class>Models.ProductSmallfirm</class>
+        <class>Models.Products</class>
+        <class>Models.PurchaseOrder</class>
+        <class>Models.Sample</class>
+        <class>Models.SmallFirms</class>
+        <class>Models.SmallfirmMachines</class>
+        <properties>
+            <property name="eclipselink.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=ProjectDB"/>
+            <property name="eclipselink.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="eclipselink.jdbc.user" value="javauser"/>
+            <property name="eclipselink.jdbc.password" value="1234"/>
+        </properties>
+    </persistence-unit>
+</persistence>

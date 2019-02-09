@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Models.Products">
+        <table name="PRODUCTS" schema="dbo" catalog="ProjectDB"/>
+        <attributes>
+            <id name="productId">
+                <column name="Product_ID"/>
+            </id>
+            <basic name="productName">
+                <column name="Product_Name"/>
+            </basic>
+            <basic name="pricePerUnit">
+                <column name="Price_Per_Unit"/>
+            </basic>
+            <basic name="unitsInStock">
+                <column name="Units_In_Stock"/>
+            </basic>
+            <basic name="unitsOnOrder">
+                <column name="Units_On_Order"/>
+            </basic>
+            <basic name="requiredTime">
+                <column name="Required_Time"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

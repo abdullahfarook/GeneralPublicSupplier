@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="Models.Sample">
+        <table name="SAMPLE" schema="dbo" catalog="ProjectDB"/>
+        <id-class class="Models.SamplePK"/>
+        <attributes>
+            <id name="orderId">
+                <column name="Order_ID"/>
+            </id>
+            <id name="laboratoryId">
+                <column name="Laboratory_ID"/>
+            </id>
+            <basic name="sampleDetails">
+                <column name="Sample_Details"/>
+            </basic>
+            <basic name="picture">
+                <column name="picture"/>
+                <lob/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

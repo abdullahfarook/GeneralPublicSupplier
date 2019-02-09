@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="spProductContent" prefHeight="580.0" prefWidth="1004.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Apllication.Orders.CurrentOrdersController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="834.0">
+         <children>
+            <BorderPane layoutX="220.0" layoutY="140.0" prefHeight="479.0" prefWidth="639.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <TableView fx:id="tvCurrentOrders" editable="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: none; -fx-border-color: none;" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+                    <columns>
+                        <TableColumn fx:id="tcFactoryName" prefWidth="157.0" text="Factory Name" />
+                      <TableColumn fx:id="tcProductName" prefWidth="146.0" text="Product Name" />
+                        <TableColumn fx:id="tcQuantity" prefWidth="139.0" text="Quantity" />
+                        <TableColumn fx:id="tcPriceUnit" prefWidth="175.0" text="Price/Unit" />
+                        <TableColumn fx:id="tcLaboratory" prefWidth="171.0" text="Laboratory" />
+                        <TableColumn fx:id="tcDate" prefWidth="139.0" text="Date" />
+                    </columns>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                            <MenuItem fx:id="miSellSelected" mnemonicParsing="false" text="Sell It" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TableView>
+               </center>
+               <bottom>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="944.0" spacing="20.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="btnAddNew" mnemonicParsing="false" onAction="#btnAddNewOnAction" text="Add Order" />
+                        <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#btnUpdateOnAction" text="Update" />
+                        <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#btnDeleteOnAction" text="Delete" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets right="20.0" />
+                     </BorderPane.margin>
+                  </HBox>
+               </bottom>
+               <top>
+                  <BorderPane prefHeight="85.0" prefWidth="944.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="944.0" spacing="10.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <TextField fx:id="tfSearch" prefHeight="31.0" prefWidth="608.0" />
+                              <Button fx:id="btnUpdate1" mnemonicParsing="false" onAction="#btnSearch" prefHeight="35.0" prefWidth="98.0" text="Search" />
+                              <Button fx:id="btnRefresh" mnemonicParsing="false" onAction="#btnRefreshOnACtion" prefHeight="31.0" prefWidth="32.0" />
+                           </children>
+                        </HBox>
+                     </top>
+                     <center>
+                        <AnchorPane fx:id="apCombobox" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="944.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ComboBox fx:id="cbSoteViewSupplyer" prefWidth="150.0" promptText="Factory" />
+                                    <ComboBox fx:id="cbSoteViewBrands" prefWidth="150.0" promptText="Laboratory" />
+                                    <ComboBox fx:id="cbSoteViewCatagory" prefWidth="150.0" promptText="Product" />
+                                    <ComboBox fx:id="cbSoteViewRMA" prefWidth="150.0" promptText="Category" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets left="30.0" right="30.0" />
+   </padding>
+   <stylesheets>
+      <URL value="@../../../style/MainStyle.css" />
+      <URL value="@../../../style/store.css" />
+   </stylesheets>
+</StackPane>
